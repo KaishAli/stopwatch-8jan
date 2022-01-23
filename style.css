@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/7919366/pexels-photo-7919366.jpeg?cs=srgb&dl=pexels-iam-hogir-7919366.jpg&fm=jpg);
+    font-family: sans-serif;
+    font-size:16px;
+    width:100%;
+    height:100vh;
+    background-color:rgb(217, 166, 237);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.outer-circle{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background-color:rgb(78, 31, 245);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.inner{
+    width:210px;
+    height:210px;
+    border-radius:50%;
+    background-color:rgb(189, 93, 245);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+ 
+.minute{
+    font-size:43px;
+}
+.sec{
+    font-size:34px;
+}
+.msec{
+    font-size:23px;
+}
+.button-wrapper{
+ width:300px;
+ margin-top:30px;
+ display:flex;
+ justify-content:space-between;    
+}
+.button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid white;
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+.laps{
+    list-style:none;
+    color:rgb(22, 3, 3);
+}
+.laps{
+list-style:none;
+color:rgb(0, 0, 0);
+height:250px;
+width:250px;
+overflow:auto;
+position:relative;
+padding:30px 0;
+}
+.laps::-webkit-scrollbar{
+    display:none;
+}
+.lap-item
+{
+    display:inline-block;
+    width:100%;
+    padding:10px;
+    text-align:center;
+    border:1px solid #444;
+    border-radius:50px;
+    margin-bottom:15px;
+}
+.number{
+    color:#cccccc;
+}
+.time-stamp{
+    display:inline-block;
+    margin-left:25px;
+}
+.lap-clear-button{
+    position:fixed;
+    display:block;
+    z-index:1000;
+    bottom:35px;
+    left:50%;
+    transform:translate(-50%);
+    width:130px;
+    padding:10px 0;
+    border-radius:50px;
+    background-color:rgb(199, 73, 73);
+    border:1px solid white;
+    cursor:pointer;
+}
+.hidden{
+    visibility:hidden;
+}
